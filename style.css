@@ -1,0 +1,324 @@
+/* S T A R T   - V A R I A B L E S  */
+:root {
+    /* C O L O U R S  */
+    --hero-subtitle-color: rgba(246, 246, 246, 1);
+    --navigation-text-color: rgba(37, 43, 66, 1);
+    --app-description-color: rgba(115, 115, 115, 1);
+    --hero-title-color: rgba(255, 255, 255, 1);
+    --footer-description-color: rgba(92, 92, 92, 1);
+    --titles-color: rgba(0, 0, 0, 1);
+    --hover-color: rgba(250, 74, 12, 1);
+
+    /* F O N T S  */
+    --first-font: "Montserrat", sans-serif;
+    --second-font: "Poppins", sans-serif;
+    --third-font: "Roboto", sans-serif;
+}
+/* F I N I S H  - V A R I A B L E S  */
+
+/* S T A R T  - G L O B A L - S T Y L E S */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--first-font);
+}
+
+.container {
+    width: 1350px;
+    margin: 0 auto;
+}
+/* F I N I S H  - G L O B A L -  S T Y L E S  */
+
+/* S T A R T - H E A D E R - S T Y L E S  */
+.header {
+    background-color: var(--hero-title-color);
+}
+
+.header-container {
+    justify-content: space-between;
+    align-content: baseline;
+    display: flex;
+}
+
+.header-logo {
+    padding-bottom: 41.27px;
+    padding-top: 49.52px;
+    height: 65.21px;
+    width: 150px;
+}
+
+.header-nav {
+    padding-right: 210px;
+}
+.nav-list {
+    padding-bottom: 54px;
+    padding-top: 54px;
+    align-content: baseline;
+    gap: 94px;
+    display: flex;
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+.nav-link {
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navigation-text-color);
+}
+/* F I N I S H  - H E A D E R - S T Y L E S   */
+
+/* S T A R T - H E R O - S T Y L E S */
+.hero {
+    height: 619px;
+    width: auto;
+    background-image: url(./images/hero-background.png);
+}
+
+.hero-container {
+    text-align: center;
+}
+
+.hero-subtitle {
+    padding-top: 79px;
+    padding-bottom: 10px;
+    color: var(--hero-subtitle-color);
+    letter-spacing: 0.1px;
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.hero-title {
+    padding-bottom: 9.89px;
+    letter-spacing: 0.2px;
+    line-height: 80px;
+    font-weight: 700;
+    font-size: 58px;
+    color: var(--hero-title-color);
+    font-family: var(--second-font);
+}
+
+.hero-description {
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--hero-subtitle-color);
+    padding-bottom: 78px;
+}
+
+.hero-list {
+    padding-bottom: 162px;
+    padding-right: 387px;
+    padding-left: 394px;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.hero-button {
+    color: var(--hero-title-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    height: 36px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--hover-color);
+    width: 236px;
+    height: 68px;
+    border-width: 0;
+    border-radius: 30px;
+}
+
+.hero-second-button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--hero-title-color);
+    border-width: 1px;
+}
+/* F I N I S H  - H E R O - S T Y L E S */
+
+/* S T A R T - A P P - S T Y L E S */
+.app-list {
+    padding-bottom: 190.78px;
+    flex-wrap: wrap;
+    display: flex;
+    padding-right: 71px;
+    padding-left: 84px;
+}
+
+.app-item {
+    display: flex;
+}
+
+.app-item-container {
+    padding-left: 287px;
+    padding-top: 113px;
+    height: 280px;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.app-item-container-left {
+    padding-top: 213.03px;
+    padding-right: 338px;
+}
+
+.app-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.app-title {
+    padding-bottom: 70px;
+    padding-top: 56px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--titles-color);
+    font-family: var(--second-font);
+}
+.app-subtitle {
+    padding-bottom: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--hover-color);
+}
+
+.app-item-title {
+    padding-bottom: 17px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    color: var(--nav-text-color);
+    line-height: 57px;
+    font-size: 40px;
+}
+
+.app-description {
+    letter-spacing: 0.2px;
+    line-height: 38px;
+    font-weight: 500;
+    color: var(--app-description-color);
+    font-size: 24px;
+}
+
+.app-img {
+    width: 205px;
+    height: 506.97px;
+}
+/* F I N I S H  - A P P - S T Y L E S */
+
+/* S T A R T - S H O P - S T Y L E S */
+.shop {
+    text-align: center;
+    height: 509px;
+    background-image: url(./images/shop-background.png);
+}
+
+.shop-title {
+    padding-bottom: 10px;
+    padding-top: 131px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 57px;
+    font-size: 40px;
+    color: var(--hero-title-color);
+}
+
+.shop-desc {
+    padding-bottom: 59px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 24px;
+    color: var(--hero-title-color);
+}
+
+.shop-list {
+    width: 331px;
+    gap: 16px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.shop-button {
+    height: 64px;
+    width: 142px;
+    border-radius: 10px;
+    border-width: 0;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 16px;
+    color: var(--hero-title-color);
+    background-color: var(--hover-color);
+}
+
+.shop-second-button {
+    height: 60px;
+    width: 173px;
+    border-style: solid;
+    border-color: var(--hero-title-color);
+    border-width: 1px;
+    background-color: transparent;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 16px;
+    color: var(--hero-title-color);
+}
+/* S T A R T - S H O P - S T Y L E S */
+
+.footer-container {
+    padding-bottom: 58px;
+    padding-top: 114px;
+    padding-left: 24px;
+    background-color: var(--hero-title-color);
+}
+
+.footer-list {
+    display: flex;
+    gap: 835.5px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 65.21px;
+}
+
+.footer-description {
+    padding-bottom: 29px;
+    padding-top: 19px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: var(--third-font);
+    color: var(--footer-description-color);
+}
+/* F I N I S H  - S H O P - S T Y L E S  */
+/* M A D E - B Y - [ H L I B - S A M O D I N ] */
+/* I F - Y O U - R E A D - T H I S - K N O W - T H A T - I - A M - T H E - S I G M A  */
+/* 
+                              *******          
+                            **       **        
+                           *           *       
+                          *   O     O   *      
+                          *      ▽       *       
+                           *  \_____/  *        
+                            **       **         
+                              *******                              
+*/
