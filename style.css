@@ -201,7 +201,8 @@ body {
     line-height: 57px;
     font-weight: 700;
     letter-spacing: 0.2px;
-    padding: 131px 0 10px;
+    padding-top: 131px;
+    padding-bottom: 10px;
 }
 
 .shop-description {
@@ -224,16 +225,22 @@ body {
     background-color: var(--hover-color);
     color: var(--hero-title-color);
     font-size: 16px;
+    line-height: 28px;
     font-weight: 700;
+    letter-spacing: 0.2px;
     border-width: 0;
     border-radius: 10px;
-    padding: 18px 31px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
-
 .shop-second-button {
     color: var(--hero-title-color);
     font-size: 16px;
+    line-height: 28px;
     font-weight: 700;
+    letter-spacing: 0.2px;
     background-color: transparent;
     border-width: 1px;
     border-color: var(--hero-title-color);
@@ -247,7 +254,10 @@ body {
 
 .footer-container {
     display: flex;
-    padding: 114px 24px 58px;
+    background-color: var(--hero-title-color);
+    padding-left: 24px;
+    padding-top: 114px;
+    padding-bottom: 58px;
     justify-content: space-between;
 }
 
@@ -256,6 +266,8 @@ body {
     font-family: var(--third-font);
     font-size: 12px;
     line-height: 18px;
+    letter-spacing: 0.1px;
     font-weight: 700;
-    padding: 19px 0 29px;
+    padding-top: 19px;
+    padding-bottom: 29px;
 }
